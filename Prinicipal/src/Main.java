@@ -11,10 +11,13 @@ public class Main {
             String ss = new Main().pideDescripcion();
             double[] dd = new Main().pideProductos();
 
-            System.out.println(ss);
-            System.out.println("Producto 1: $" +dd[0]+"\nProducto 2: $"+dd[1]);
+            /*System.out.println(ss);
+            System.out.println("Producto 1: $" +dd[0]+"\nProducto 2: $"+dd[1]);*/
 
+            double total = dd[0] + dd[1];
+            final double impuesto = 0.19;
 
+            System.out.println("Descripcion: " +ss +" \nTotal bruto: $"+total+"\nImpuesto: %"+impuesto*100+"\nTotal neto: $"+(total+(total*impuesto)));
 
     }
 
